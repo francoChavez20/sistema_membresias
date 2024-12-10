@@ -109,13 +109,13 @@ if (isset($_SESSION['mensaje'])) {
                                     ?>
                                         <tr>
                                             <td><?php echo $contador = $contador + 1 ?></td>
-                                            <td><?php echo htmlspecialchars($datos_miembros['nombre']) . ' ' . htmlspecialchars($datos_miembros['apellido']); ?></td>
-                                            <td><?php echo htmlspecialchars($datos_miembros['dni']); ?></td>
-                                            <td><?php echo htmlspecialchars($datos_miembros['telefono']); ?></td>
-                                            <td><?php echo htmlspecialchars($datos_miembros['tipo_membresia']); ?></td>
+                                            <td><?php echo $datos_miembros['nombre'] . ' ' . $datos_miembros['apellido']; ?></td>
+                                            <td><?php echo $datos_miembros['dni']; ?></td>
+                                            <td><?php echo $datos_miembros['telefono']; ?></td>
+                                            <td><?php echo $datos_miembros['tipo_membresia']; ?></td>
                                             <td><?php echo $estado_membresia; ?></td>
-                                            <td><?php echo htmlspecialchars($datos_miembros['fecha_comienzo']); ?></td>
-                                            <td><?php echo htmlspecialchars($datos_miembros['fecha_final']); ?></td>
+                                            <td><?php echo $datos_miembros['fecha_comienzo']; ?></td>
+                                            <td><?php echo $datos_miembros['fecha_final']; ?></td>
                                             <td>
                                                 <center>
                                                     <div class="btn-group">
