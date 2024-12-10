@@ -8,8 +8,8 @@ $sql_miembros = "SELECT m.id_miembros AS id_miembro,
                         m.estado_membresia AS estado_membresia, 
                         m.fecha_comienzo AS fecha_comienzo, 
                         m.fecha_final AS fecha_final 
-                 FROM gym.miembros AS m
-                 INNER JOIN gym.tipo_membresia AS tm ON m.id_membresia = tm.id_membresia";
+                 FROM miembros AS m
+                 INNER JOIN tipo_membresia AS tm ON m.id_membresia = tm.id_membresia";
 
 $query_miembros = $pdo->prepare($sql_miembros);
 $query_miembros->execute();
