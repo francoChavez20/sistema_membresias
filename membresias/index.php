@@ -126,7 +126,7 @@ if (isset($_SESSION['mensaje'])) {
                                                                         <div class="row">
                                                                             <div class="col-md-6">
                                                                                 <div class="form-group">
-                                                                                    <label for="">DNI <b>*</b></label>
+                                                                                    <label for="">Descripcion <b>*</b></label>
                                                                                     <input type="text" id="descripcion<?php echo $id_membresia; ?>" value="<?php echo $datos_membresia['descripcion']; ?>" class="form-control">
                                                                                     <small style="color: red;display: none" id="lbl_descripcion<?php echo $id_membresia; ?>">* Este campo es requerido</small>
                                                                                 </div>
