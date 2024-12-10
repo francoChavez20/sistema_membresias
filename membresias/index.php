@@ -39,7 +39,7 @@ if (isset($_SESSION['mensaje'])) {
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-create">
                             <i class="fa fa-plus"></i> Agregar Nuevo
                         </button>
-                        <a href="../fpdf/membresiaa.php" target="_blank" class="btn btn-primary m-2"><i class="fas fa-file-pdf"></i> Generar reporte</a>
+                        <a href="<?php echo $URL; ?>/fpdf/membresiaa.php" target="_blank" class="btn btn-primary m-2"><i class="fas fa-file-pdf"></i> Generar reporte</a>
                     </h1>
                 </div><!-- /.col -->
 

@@ -142,29 +142,34 @@
             </ul>
           </li>
 
-          <li class="nav-item menu">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-user-circle"></i>
-              <p>
-                Usuarios
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="<?php echo $URL;?>/usuario/usuario.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Listado Usuario</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?php echo $URL;?>/usuario/create.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>crear usuario</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+          <?php if (isset($_SESSION['rol']) && $_SESSION['rol'] === 'administrador'): // Solo mostrar si el rol es 'administrador' ?>
+<li class="nav-item menu">
+  <a href="#" class="nav-link active">
+    <i class="nav-icon fas fa-user-circle"></i>
+    <p>
+      Usuarios
+      <i class="right fas fa-angle-left"></i>
+    </p>
+  </a>
+  <ul class="nav nav-treeview">
+    <li class="nav-item">
+      <a href="<?php echo $URL; ?>/usuario/usuario.php" class="nav-link">
+        <i class="far fa-circle nav-icon"></i>
+        <p>Listado Usuario</p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="<?php echo $URL; ?>/usuario/create.php" class="nav-link">
+        <i class="far fa-circle nav-icon"></i>
+        <p>Crear Usuario</p>
+      </a>
+    </li>
+  </ul>
+</li>
+<?php endif; ?>
+
+
+
           <li class="nav-item">
                         <a href="<?php echo $URL; ?>/app/controllers/login/cerrar_sesion.php" class="nav-link mt-4" style="background-color: #ca0a0b">
                             <i class="nav-icon fas fa-door-closed"></i>
